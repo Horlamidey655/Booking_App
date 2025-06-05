@@ -16,7 +16,9 @@ interface inputdata {
 
 const Contact = ({ entry: { Name, Date, Time } }: contact) => {
   const [isReserved, setIsReserved] = useState(false);
-  const { register, handleSubmit } = useForm<inputdata>();
+  const { register, handleSubmit } = useForm<data>({
+    shouldUseNativeValidation: true,
+  });
 
   const submitHandler = (data: inputdata) => {
     console.log(

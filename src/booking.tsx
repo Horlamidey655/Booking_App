@@ -12,7 +12,9 @@ interface data {
 }
 
 const Booking = ({ onSubmit, isBooked }: formData) => {
-  const { register, handleSubmit } = useForm<data>();
+  const { register, handleSubmit } = useForm<data>({
+    shouldUseNativeValidation: true,
+  });
   return (
     <div className="booking">
       <h3 className="title">Book a table</h3>
