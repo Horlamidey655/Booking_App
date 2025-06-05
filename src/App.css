@@ -1,0 +1,81 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.title {
+  margin-bottom: 2rem;
+}
+body {
+  font-size: 1.6rem;
+}
+
+.form-label span {
+  font-size: 1.4rem;
+  font-style: italic;
+}
+
+.contact,
+.booking {
+  width: min(100% - 4rem, 50rem);
+  padding: 3rem;
+  margin: 5rem auto;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.booking-form,
+.contact-form {
+  margin-top: 1rem;
+  display: grid;
+  gap: 0.8rem;
+}
+
+input,
+.form-label {
+  padding: 1rem;
+  border-radius: 0.3rem;
+  outline: none;
+  color: black;
+}
+
+.form-label input,
+.form-label {
+  border: none;
+  background: rgb(187, 213, 255);
+}
+
+.contact-label input {
+  border: 1px solid grey;
+}
+
+.btn {
+  border: none;
+  padding: 1.5rem;
+  border-radius: 0.3rem;
+  background: rgb(0, 138, 185);
+  color: white;
+  justify-self: start;
+}
+
+.contact-details {
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  background: rgb(187, 213, 255);
+}
+.contact-label {
+  display: grid;
+  gap: 0.4rem;
+}
+.contact-label input {
+  padding: 1.5rem;
+}
+.bold {
+  font-weight: bold;
+}
